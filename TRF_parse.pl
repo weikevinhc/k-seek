@@ -1,4 +1,4 @@
-#!usr/bin/perl
+#!/usr/bin/env perl
 # TRF_parse.pl
 # parses TRF output (.dat)
 
