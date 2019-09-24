@@ -1,4 +1,4 @@
-#!usr/bin/perl
+#!/usr/bin/env perl
 # TRF_collapse.pl
 # collapse trf output into a fastA
 
