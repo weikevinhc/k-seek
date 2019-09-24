@@ -1,4 +1,4 @@
-#!usr/bin/perl
+#!/usr/bin/env perl
 # k_compiler.pl
 # colapses all rep.total files in directory into one table
 use warnings;
