@@ -1,4 +1,4 @@
-#!usr/bin/perl
+#!/usr/bin/env perl
 # TRF_blast_group.pl
 # use grouped tandem fasta to identify regions in the reduced.trf.txt file
 
