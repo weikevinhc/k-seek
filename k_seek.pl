@@ -1,4 +1,4 @@
-#!usr/bin/perl
+#!/usr/bin/env perl
 # k_seek.r4.pl
 # identifies repeats in every read, and counts them, version 4 (combines k_finder and k_counter).
 use strict;
