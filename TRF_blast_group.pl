@@ -1,4 +1,4 @@
-#!usr/bin/perl
+#!/usr/bin/env perl
 # TRF_blast_group.pl
 # group similar tandem repeats after the self blast.
 
