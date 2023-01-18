@@ -276,9 +276,12 @@ sub degen {
 	my $diff = length($target) - length($kmer2);
 	if ($diff == 0) {
 		# find substitutions
-		foreach (0 .. (1 - length($kmer2))) {
-			my $degen_kmer = substr($kmer2, $_, 1, "[ACTGN]");
-			if ($target =~ /$degen_kmer/g) {
+		# kmer length is positive doing 1 - bigger than one yield a negative number
+		foreach (0 .. ( length($kmer2) - 1)) {
+			# unfortunalty the subtr function return the exised string not the new string and in fact modify the original string
+			my $temp_k = $kmer2; # make a copy copy
+			my $degen_kmer = substr($temp_k, $_, 1, "[ACTGN]"); 
+			if ($target =~ /$temp_k/g) {
 				return 1;
 			}
 		} 
